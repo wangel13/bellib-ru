@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <title>Книги</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/main.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- JS -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Навигация  -->
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="#">bellib.ru</a>
+            <div class="nav-collapse collapse navbar-responsive-collapse">
+              <ul class="nav">
+                <li class="active"><a href="#">Каталог книг</a></li>
+                <li class="divider-vertical"></li>
+                <li><a href="#">FAQ</a></li>
+                <li class="divider-vertical"></li>
+                <li><a href="#" data-toggle="modal" data-target="#contact">Написать нам</a></li>
+              </ul>
+              <form class="navbar-search pull-right" action="">
+                <input type="text" class="search-query span2" placeholder="Поиск">
+              </form>
+              <ul class="nav pull-right">
+                <li><a href="#">Авторизация</a></li>
+                <li class="divider-vertical"></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Меню пользователя <i class="icon-angle-down"></i></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Алфавит -->
+      <div class="alphabet-container">
+	<ul>
+	  <li>А</li>
+	  <li>Б</li>
+	  <li>В</li>
+	  <li>Г</li>
+	  <li>Д</li>
+	  <li>Е</li>
+	  <li>Ё</li>
+	  <li>Ж</li>
+	  <li>З</li>
+	  <li>И</li>
+	  <li>К</li>
+	  <li>Л</li>
+	  <li>М</li>
+	  <li>Н</li>
+	  <li>О</li>
+	  <li>П</li>
+	  <li>Р</li>
+	  <li>С</li>
+	  <li>Т</li>
+	  <li>У</li>
+	  <li>Ф</li>
+	  <li>Х</li>
+	  <li>Ч</li>
+	  <li>Ш</li>
+	  <li>Щ</li>
+	  <li>Э</li>
+	  <li>Ю</li>
+	  <li>Я</li>
+	</ul>
+	<ul>
+	  <li>A</li>
+	  <li>B</li>
+	  <li>C</li>
+	  <li>D</li>
+	  <li>E</li>
+	  <li>F</li>
+	  <li>G</li>
+	  <li>J</li>
+	  <li>K</li>
+	  <li>L</li>
+	  <li>M</li>
+	  <li>N</li>
+	  <li>O</li>
+	  <li>P</li>
+	  <li>Q</li>
+	  <li>R</li>
+	  <li>S</li>
+	  <li>T</li>
+	  <li>U</li>
+	  <li>V</li>
+	  <li>W</li>
+	  <li>X</li>
+	  <li>Y</li>
+	  <li>Z</li>
+	</ul>
+	<ul>
+	  <li>1</li>
+	  <li>2</li>
+	  <li>3</li>
+	  <li>4</li>
+	  <li>5</li>
+	  <li>6</li>
+	  <li>7</li>
+	  <li>8</li>
+	  <li>9</li>
+	  <li>0</li>
+	</ul>
+      </div>
+      <br><br><br>
+      <!-- Популярные книги -->
+      <p class="muted" align="center">Популярные книги: <a href="#">Джон Рональд Руэл Толкин - Хоббит</a> <a href="#" data-toggle="modal" data-target="#popbooks"><i class="icon-plus"></i></a> </p>
+      <!-- Поиск  -->
+      <div class="input-append" align="center">
+	<input class="span10 search-main" type="text" placeholder="Поиск по каталогу">
+	<button class="btn btn-primary" type="button"><i class="icon-search"></i></button>
+      </div>
+      <!-- Новые книги -->
+      <p class="muted" align="center">Новые поступления: <a href="#">Александр Дюма - Мушкетеры</a> <a href="#" data-toggle="modal" data-target="#newbooks"><i class="icon-plus"></i></a></p>
+      <br><br><br>
+      <h4>Что это?</h4>
+      <p>
+	Это — удобный книжный каталог и система поиска необходимой тебе литературы. Здесь ты можешь найти всю самую важную информацию о любой интересующей тебя книге и узнать, что о ней думают другие пользователи.
+	А самое главное — я помогу тебе скачать или купить по самой выгодной цене и приобрести ее в подходящем именно тебе интернет-магазине.
+      </p>
+      <h4/>Как это?</h4>
+<p>
+  Здесь — большой каталог и удобная система разделов. А если ты ищешь какую-то конкретную книгу — просто воспользуйся строкой поиска — введи название и я тут же расскажу тебе все, что знаю.
+  Теперь не нужно долго и нудно ковыряться в интернете, пытаясь найти нужную книгу! Ведь все, что тебе нужно, уже есть — здесь — на Книгобазе!
+</p>
+
+      <!-- Social -->
+      <div class="row">
+	<div class="span4">
+	  <!-- Twitter -->
+	  <a class="twitter-timeline" href="https://twitter.com/olegtinkov" data-widget-id="290180263537950721">Tweets by @olegtinkov</a>
+	  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+	</div>
+	<div class="span4">
+	  <!-- FB -->
+	  <div id="fb-root"></div>
+	  <script>(function(d, s, id) {
+	    var js, fjs = d.getElementsByTagName(s)[0];
+	    if (d.getElementById(id)) return;
+	    js = d.createElement(s); js.id = id;
+	    js.src = "https://connect.facebook.net/ru_RU/all.js#xfbml=1";
+	    fjs.parentNode.insertBefore(js, fjs);
+	    }(document, 'script', 'facebook-jssdk'));</script>
+	  <div class="fb-recommendations" data-width="370" data-height="600" data-header="true" data-font="arial"></div>
+	</div>
+	<div class="span4">
+	  <!-- VK -->
+	  <script type="text/javascript" src="http://vk.com/js/api/openapi.js?75"></script>
+
+	  <!-- VK Widget -->
+	  <div id="vk_groups"></div>
+	  <script type="text/javascript">
+	    VK.Widgets.Group("vk_groups", {mode: 0, width: "370", height: "600"}, 20003922);
+	  </script>
+
+	</div>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">
+	<div class="row">
+	<div class="span3">
+	  <h4>Контактные данные</h4>
+	      <address>
+		<strong>Twitter, Inc.</strong><br>
+		795 Folsom Ave, Suite 600<br>
+		San Francisco, CA 94107<br>
+		<abbr title="Phone">P:</abbr> (123) 456-7890
+	      </address>
+
+	      <address>
+		<strong>Full Name</strong><br>
+		<a href="mailto:#">first.last@example.com</a>
+	      </address>
+	</div>
+	<div class="span3">
+	  <h4>Информация</h4>
+	</div>
+	<div class="span3">
+	  <h4>Информация</h4>
+	</div>
+	<div class="span3">
+	  <h4>Карта проезда</h4>
+	  <!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (начало) -->
+            <div id="ymaps-map-id_1345134491355305112814" style="width: 250px; height: 250px;"></div>
+            <script type="text/javascript">function fid_1345134491355305112814(ymaps) {var map = new ymaps.Map("ymaps-map-id_1345134491355305112814", {center: [66.66817628615907, 63.71665159196675], zoom: 16, type: "yandex#publicMap"});map.controls.add("zoomControl").add("mapTools").add(new ymaps.control.TypeSelector(["yandex#map", "yandex#satellite", "yandex#hybrid", "yandex#publicMap"]));map.geoObjects.add(new ymaps.Placemark([66.66814816258149, 63.71616563703721], {balloonContent: "Белоярская централизованная библиотечная система.<br/>628162, Россиия, ХМАО-Югра,<br/>ул. Центральная, д. 10"}, {preset: "twirl#greenDotIcon"})).add(new ymaps.Polyline([[66.66812478787692, 63.716002871635006], [66.66745960004128, 63.715936270350205], [66.66653692014013, 63.71650713354737]], {balloonContent: "От центрального перекрестка, через центральный вход Камертона."}, {strokeColor: "33cc00", strokeWidth: 5, strokeOpacity: 0.8}));};</script>
+            <script type="text/javascript" src="http://api-maps.yandex.ru/2.0/?coordorder=longlat&load=package.full&wizard=constructor&lang=ru-RU&onload=fid_1345134491355305112814"></script>
+            <!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (конец) -->
+
+	</div>
+	</div>
+      </div>
+
+
+    </div>
+
+<!-- Modal -->
+
+<!-- Contact -->
+<div id="contact" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">Напишите нам</h3>
+  </div>
+  <div class="modal-body">
+    <label>Представьтесь</label>
+    <div class="input-append"><input type="text" id="" name=""><span class="add-on"><i class="icon-user"></i></span></div>
+
+    <label>Ваше послание</label>
+    <textarea rows="6"></textarea>
+
+    <label>Мы можем связаться с вами по адресу</label>
+    <div class="input-append"><input type="text" id="" name=""><span class="add-on"><i class="icon-envelope"></i></span></div>
+
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Закрыть</button>
+    <button class="btn btn-primary">Отправить</button>
+  </div>
+</div>
+
+<!-- Популярные книги -->
+<div id="popbooks" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="newbooksLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">Новые книги</h3>
+  </div>
+  <div class="modal-body">
+    <ol>
+      <li>Джон Рональд Руэл Толкин - Хоббит</li>
+      <li>Джон Рональд Руэл Толкин - Хоббит</li>
+      <li>Джон Рональд Руэл Толкин - Хоббит</li>
+      <li>Джон Рональд Руэл Толкин - Хоббит</li>
+      <li>Джон Рональд Руэл Толкин - Хоббит</li>
+    </ol>
+  </div>
+</div>
+
+<!-- Новые поступления -->
+<div id="newbooks" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="newbooksLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">Новые книги</h3>
+  </div>
+  <div class="modal-body">
+    <ol>
+      <li>Джон Рональд Руэл Толкин - Хоббит</li>
+      <li>Джон Рональд Руэл Толкин - Хоббит</li>
+      <li>Джон Рональд Руэл Толкин - Хоббит</li>
+      <li>Джон Рональд Руэл Толкин - Хоббит</li>
+      <li>Джон Рональд Руэл Толкин - Хоббит</li>
+    </ol>
+  </div>
+</div>
+
+
+  </body>
+
+</html>
